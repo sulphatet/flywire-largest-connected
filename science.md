@@ -3,7 +3,7 @@
 ## 1. Abstract
 We report the identification of a shared isomorphic neuronal circuit consisting of **$N = 344$ neurons** conserved across three Drosophila connectomic datasets: **BANC**, **FAFB**, and **MCNS**. This circuit was identified using a rigorous directed star-motif extraction algorithm. Given the NP-hard nature of the search space, we focused on identifying a provably valid, large-scale induced motif that is robust to the biological noise present in electron microscopy reconstructions.
 
-## 2. Methodology & Mathematical Rigor
+## 2. Methodology
 Our discovery pipeline was built on two parallel paths:
 
 ### Primary Production Path: The Isomorphic Star Motif
@@ -21,13 +21,10 @@ The identified 344-neuron circuit is anchored by Rank-1 hub neurons (e.g., `7205
 ### Network Graph Visualization
 The 2D graph below illustrates the identified circuit. The central hub (red) coordinates signals to 343 independent target neurons (blue), creating a massive divergence point.
 
-![Circuit Network Graph](circuit_graph.png)
+![Circuit Network Graph](results/circuit_graph.png)
 
 ### Codex 3D Mesh Visualization
 The 3D morphology of the central hub can be explored directly in FlyWire Codex.
-
-**Interactive 3D Mesh Link:**
-[Visualize FAFB Hub 720575940626979621](https://codex.flywire.ai/app/vis?root_ids=720575940626979621)
 
 ### Biological Significance:
 *   **Signal Divergence:** The circuit represents a high-fidelity "broadcast" mechanism conserved across individuals.
@@ -38,7 +35,7 @@ To explore the deeper topological architecture of the FlyWire connectomes, we pe
 
 Using a 5-dimensional embedding space (PageRank, degrees, 2-hop centrality), we aligned the BANC, FAFB, and MCNS datasets to identify "Structural Twins"—neurons that occupy identical functional niches across different biological contexts.
 
-![Structural Manifold Alignment](ml_manifold.png)
+![Structural Manifold Alignment](results/ml_manifold.png)
 
 *   **Observation:** The perfect overlap of the three datasets in structural space (as seen in the PCA projection above) confirms the high degree of evolutionary conservation in the Drosophila nervous system.
 *   **Result:** We identified **186 conserved structural analogs** across the entire central nervous system, proving that the Fly connectome is built from a "standardized structural toolkit."
